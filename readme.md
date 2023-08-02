@@ -1,13 +1,16 @@
 # Duckdb Analysis
 
-This repository contains the implementation of an analysis of a dataset. I created a very large fake dataset and perform data analysis using DuckDB, with a focus on optimizing the query execution time for aggregated queries.The goal of this assignment is to study about the fnctionalities of duckdb and then explore where it shines.
+The goal of this assignment is to study about the fnctionalities of duckdb and then explore where it shines.I created a very large fake dataset and perform data analysis using DuckDB, with a focus on optimizing the query execution time for aggregated queries and visalizing them.
 
 ## Dataset Description
 
 The dataset was generated using the Faker library in Python and consists of three tables: transactions, users, and products. The transaction table contains 100 million rows, the users table contains 10 million rows, and the products table contains 200,000 rows. The dataset was structured with the transaction table as the fact table and users and products as dimension tables.
+You can find the final parqet file in this link: [fake_data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ)
 
 ## Analysis Roadmap
 
+The analysis can be found on the file ./analysis_final.ipynb
+The anaysis proceeds in the following way,
 1. Installing and Setup of DuckDB
 2. Data Loading
 3. Basic Data Analysis
@@ -46,7 +49,7 @@ To execute the analysis, follow these steps:
 2. Clone this repository: `git clone https://github.com/iamhwkchn/analysis_dckdb.git`
 3. Download the dataset from this link [data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ) an then place them in the folder merged or create your own dataset by runnig the files in the folder create_db
 4. Install required Python packages: `pip install -r requirements.txt`
-5. Run the analysis scripts: `python analysis_data.py`
+5. Run the analysis scripts: `python analysis_final.py`
 6. The analysis results will be displayed in the console, and visualizations will be saved in the `output/` directory.
 
 Feel free to explore the code and modify the analysis as needed. For any questions or issues, please contact `s36sivar@uwaterloo.ca`.
