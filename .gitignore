@@ -10,3 +10,4 @@ mydb.db.wal
 venv
 mydb1.db
 mydb1.db.wal
+analysis.py
