@@ -1,4 +1,4 @@
-# Duckdb Analsis
+# Duckdb Analysis
 
 This repository contains the implementation of an analysis of a dataset. I created a very large fake dataset and perform data analysis using DuckDB, with a focus on optimizing the query execution time for aggregated queries.The goal of this assignment is to study about the fnctionalities of duckdb and then explore where it shines.
 
@@ -43,8 +43,8 @@ The dataset was generated using the Faker library in Python and consists of thre
 To execute the analysis, follow these steps:
 
 1. Install DuckDB: [DuckDB Installation Guide](https://duckdb.org/docs/installation)
-2. Clone this repository: `git clone https://github.com/<your_username>/liquid-analytics.git`
-3. Download the dataset from this link []() an then place them in the folder merged or create your own dataset by runnig the files in the folder create_db
+2. Clone this repository: `git clone https://github.com/iamhwkchn/analysis_dckdb.git`
+3. Download the dataset from this link [data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ) an then place them in the folder merged or create your own dataset by runnig the files in the folder create_db
 4. Install required Python packages: `pip install -r requirements.txt`
 5. Run the analysis scripts: `python analysis_data.py`
 6. The analysis results will be displayed in the console, and visualizations will be saved in the `output/` directory.
