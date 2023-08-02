@@ -4,7 +4,7 @@ The goal of this assignment is to study about the fnctionalities of duckdb and t
 
 ## Dataset Description
 
-The dataset was generated using the Faker library in Python and consists of three tables: transactions, users, and products. The transaction table contains 100 million rows, the users table contains 10 million rows, and the products table contains 200,000 rows. The dataset was structured with the transaction table as the fact table and users and products as dimension tables.
+The dataset was generated using the Faker library in Python and consists of three tables: transactions, users, and products. The transaction table contains 100 million rows with 6 attributes, the users table contains 10 million rows with 7 attributes , and the products table contains 200,000 rows with 4 attributes. The dataset was structured with the transaction table as the fact table and users and products as dimension tables.
 You can find the final parqet file in this link: [fake_data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ)
 
 ## Analysis Roadmap
