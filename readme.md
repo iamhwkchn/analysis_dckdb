@@ -49,9 +49,9 @@ To execute the analysis, follow these steps:
 
 1. Install DuckDB: [DuckDB Installation Guide](https://duckdb.org/docs/installation)
 2. Clone this repository: `git clone https://github.com/iamhwkchn/analysis_dckdb.git`
-3. Download the dataset from this link [data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ) an then place them in the folder merged or create your own dataset by runnig the files in the folder create_db
+3. Download the dataset from this link [data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ) an then place them in the folder /merged in the root folder or create your own dataset by runnig the files data_gen.py and merged_csv.py in the given order.(NOTE: if your pc is not able to handle the merging of csv files in one go, yo can try this batch processing method provide in the files in transaction_batch_processing) 
 4. Install required Python packages: `pip install -r requirements.txt`
 5. Run the analysis scripts: `python analysis_final.py`
-6. The analysis results will be displayed in the console, and visualizations will be saved in the `output/` directory.
+
 
 Feel free to explore the code and modify the analysis as needed. For any questions or issues, please contact `s36sivar@uwaterloo.ca`.

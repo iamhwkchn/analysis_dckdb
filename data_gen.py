@@ -101,6 +101,6 @@ def generate_products(num_rows):
                 })
 
 # Call the functions to generate the data
-generate_users(10000000)       # Generate 10 million rows for the User dimension table
-generate_products(200000)    # Generate 10 million rows for the Product dimension table
-generate_transactions(100000000)  # Generate 10 million rows for the Transactions table``
+# generate_users(10000000)      
+generate_products(200000)    
+# generate_transactions(100000000)  

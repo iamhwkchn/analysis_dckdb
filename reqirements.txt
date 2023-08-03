@@ -1,6 +1,9 @@
 # requirement.txt
 
-duckdb==0.6.1
+duckdb==0.8.1
 pandas==1.5.2
 seaborn==0.12.1
 matplotlib==3.6.2
+pyarrow==12.0.1
+
+

@@ -17,16 +17,16 @@ def merge_csv_and_convert_to_parquet(table_name, num_batches):
     merged_df = pd.concat(dfs, ignore_index=True)
 
     # Create the "merged" directory if it doesn't exist
-    if not os.path.exists('merged_small'):
-        os.makedirs('merged_small')
+    if not os.path.exists('merged'):
+        os.makedirs('merged')
 
     # Save as merged CSV
-    csv_file = f'merged_small/{table_name}.csv'
+    csv_file = f'merged/{table_name}.csv'
     merged_df.to_csv(csv_file, index=False)
 
     # Convert to Parquet format
-    # parquet_file = f'merged/{table_name}_merged.parquet'
-    # merged_df.to_parquet(parquet_file, engine='pyarrow')
+    parquet_file = f'merged/{table_name}_merged.parquet'
+    merged_df.to_parquet(parquet_file, engine='pyarrow')
 # Merge and convert for each table
 merge_csv_and_convert_to_parquet('users', num_batches=50) 
 merge_csv_and_convert_to_parquet('products', num_batches=2)
