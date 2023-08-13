@@ -4,7 +4,7 @@ The goal of this assignment is to study about the fnctionalities of duckdb and t
 
 ## Dataset Description
 
-The dataset was generated using the Faker library in Python and consists of three tables: transactions, users, and products. The transaction table contains 100 million rows with 6 attributes, the users table contains 10 million rows with 7 attributes , and the products table contains 200,000 rows with 4 attributes. The dataset was structured with the transaction table as the aggregation table and users and products as dimension tables.
+The dataset was generated using the Faker library in Python utilizing parallel processing for data gen and consists of three tables: transactions, users, and products. The transaction table contains 100 million rows with 6 attributes, the users table contains 10 million rows with 7 attributes , and the products table contains 200,000 rows with 4 attributes. The dataset was structured with the transaction table as the aggregation table and users and products as dimension tables.
 You can find the final parqet file in this link: [fake_data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ)
 
 ## Database Schema
@@ -56,9 +56,10 @@ To execute the analysis, follow these steps:
 
 1. Install DuckDB: [DuckDB Installation Guide](https://duckdb.org/docs/installation)
 2. Clone this repository: `git clone https://github.com/iamhwkchn/analysis_dckdb.git`
-3. Download the dataset from this link [data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ) an then place them in the folder /merged in the root folder or create your own dataset by runnig the files data_gen.py and merged_csv.py in the given order.(NOTE: if your pc is not able to handle the merging of csv files in one go, yo can try this batch processing method provide in the files in transaction_batch_processing) 
-4. Install required Python packages: `pip install -r requirements.txt`
-5. Run the analysis scripts: `python analysis_final.py`
+3. Download the dataset from this link [data_parquet](https://uofwaterloo-my.sharepoint.com/:f:/r/personal/s36sivar_uwaterloo_ca/Documents/fake_data_transactions?csf=1&web=1&e=fq62cJ) an then place them in the folder /merged in the root folder or create your own dataset by runnig the file data_generation.py. : `python data_generation.py` 
+4. This utilizes parallel processing for faster data generation. If your pc can't generate a lot of worker nodes then you can utilize a regular serial processing by running the files data_gen.py and merged_csv.py in the given order.(NOTE: if your pc is not able to handle the merging of csv files in one go, yo can try this batch processing method provide in the files in transaction_batch_processing) 
+5. Install required Python packages: `pip install -r requirements.txt`
+6. Run the analysis scripts: `python analysis_final.py`
 
 
 Feel free to explore the code and modify the analysis as needed. For any questions or issues, please contact `s36sivar@uwaterloo.ca`.
