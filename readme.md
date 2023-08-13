@@ -1,6 +1,6 @@
 # Duckdb Analysis
 
-The goal of this assignment is to study about the fnctionalities of duckdb and then explore where it shines.I created a very large fake dataset and perform data analysis using DuckDB, with a focus on optimizing the query execution time for aggregated queries and visalizing them.
+The goal of this assignment is to study about the fnctionalities of duckdb and then explore where it shines.I created a very large fake dataset and perform data analysis using DuckDB, with a focus on optimizing the query execution time for aggregated queries and visalizing them. Add a new product with no history to the database and then find a way to forecast sales of that new product
 
 ## Dataset Description
 
@@ -34,12 +34,19 @@ The anaysis proceeds in the following way,
    - Bar Charts
    - Scatter Plots
    - Histograms
+7. Forecast sales of a new product
+   - Add a new product with no histoy
+   - Find existing products that are similar to the new one 
+   - Use the histor of those to predict the sales of this new product
+   - Used ARIMA model to predict the value
 
 ## Key Findings
 
 - The synthetic dataset resembled real-world data scenarios.
 - Aggregate queries provided valuable insights into various metrics based on different attributes.
 - Optimization techniques significantly improved query performance.
+- used the history of similar prroducts to forecast the sales of the new one 
+- ARIMA model proved to be reliable for time series analysis
 
 
 
